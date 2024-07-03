@@ -1,43 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOS</title>
+    <title>SoSolution</title>
+    <!-- LINKS -->
     <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/script.js" defer></script>
+    <script src="./js/script.js"></script>
+
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
 
 <body>
-<div class="main">
-    <section>
-        <img id= "backgound" src="./img/MacBook Air - 1.png" alt="backgound">
-        <img id="enfermagem"  src="./img/enfermagem.png" alt="enfermagem">
-        <img id="medicina"  src="./img/medicina.png" alt="medicina">
-    </section>
-    <section>
-        <p>Dor de cabeça </p>
-        <p> Sangramento e ou nas fezes</p>
-        <p> Dor muscular</p>
-        <p> ou contraçoes</p>
-        <p> Febre alta</p>
-        <p> Rubor/vermelhidão</p>
-        <p> Erupçoes cutâneas</p>
-        <p> Calafrios</p>
-        <p> Vomito</p>
-        <p> Dificuldade para respirar</p>
-        <p> Pressão alta</p>
-        <p> Edema/inchaço</p>
-        <p> Dores nas articulações</p>
-        <p> Corpo amarelado</p>
-        <p> Fadiga</p>
-        <p> Urina escura e fezes claras</p>
-        <p> Sem apetite</p>
-        <p> Hemorragia intensa</p>
-    </section>
+    <div class="main">
+        <section>
+            <img id="background" src="./img/MacBookAir-1.png" alt="background">
+            <img id="enfermagem" src="./img/enfermagem.png" alt="enfermagem">
+            <img id="medicina" src="./img/medicina.png" alt="medicina">
+        </section>
 
-</div>
+        <!-- Navegação lateral -->
+        <div class="scroll" id="scroll">
+            <ul class="itensScroll">
+                <li><a>Início</a></li>
+                <li><a>01</a></li>
+                <li><a>02</a></li>
+                <li><a>03</a></li>
+            </ul>
+            <!-- Linha separadora -->
+            <hr id="linhaScroll">
+        </div>
 
-    
+
+        <div id="atention">
+            <p>
+                Atenção
+
+                <br>O site foi projetado apenas para responder
+                <br>conforme as doenças que mais houveram casos durante a enchente do RS
+
+                <br>Leptospirose;
+                <br>Tétano;
+                <br>Diarreia aguda;
+                <br>Hepatite A;
+                <br>Dengue;
+                <br>Animais peçonhentos (aranhas, cobra, lacraias e escorpiões)
+            </p>
+
+        </div>
+
+
+        <section class="question">
+
+            <!-- Titulo -->
+            <div id="Title">
+                <h3>Auto-Avaliação</h3>
+                <h4>Prencha todos os campos</h4>
+            </div>
+
+            <!-- Questionário -->
+            <label>1. Você está sentindo febre?</label><br>
+            <input type="radio" name="fever" value="yes"> Sim
+            <input type="radio" name="fever" value="no"> Não
+    </div>
+    <div class="question">
+        <label>2. Você está com tosse?</label><br>
+        <input type="radio" name="cough" value="yes"> Sim
+        <input type="radio" name="cough" value="no"> Não
+    </div>
+    <div class="question">
+        <label>3. Está com dor de cabeça?</label><br>
+        <input type="radio" name="headache" value="yes"> Sim
+        <input type="radio" name="headache" value="no"> Não
+    </div>
+    <div class="question">
+        <label>4. Sente dor de garganta?</label><br>
+        <input type="radio" name="sore_throat" value="yes"> Sim
+        <input type="radio" name="sore_throat" value="no"> Não
+    </div>
+    <div class="question">
+        <label>5. Sente dor muscular?</label><br>
+        <input type="radio" name="muscle_pain" value="yes"> Sim
+        <input type="radio" name="muscle_pain" value="no"> Não
+    </div>
+    <div class="question">
+        <label>6. Você sente fadiga agora?</label><br>
+        <input type="radio" name="fatigue" value="yes"> Sim
+        <input type="radio" name="fatigue" value="no"> Não
+    </div>
+    <div class="question">
+        <label>7. Dificuldade para respirar?</label><br>
+        <input type="radio" name="breathing_difficulty" value="yes"> Sim
+        <input type="radio" name="breathing_difficulty" value="no"> Não
+    </div>
+    <div class="question">
+        <label>8. Você sente náuseas?</label><br>
+        <input type="radio" name="nausea" value="yes"> Sim
+        <input type="radio" name="nausea" value="no"> Não
+    </div>
+    <div class="question">
+        <label>9. Tem perda de olfato?</label><br>
+        <input type="radio" name="loss_of_smell" value="yes"> Sim
+        <input type="radio" name="loss_of_smell" value="no"> Não
+    </div>
+    <div class="question">
+        <label>10. Está com perda de paladar?</label><br>
+        <input type="radio" name="loss_of_taste" value="yes"> Sim
+        <input type="radio" name="loss_of_taste" value="no"> Não
+    </div>
+    <button type="button" id="diagnose-btn">Obter resultado</button>
+
+    </section>
+    <div class="diagnóstico" id="result"></div>
+
+
+
+    </div>
 </body>
+
 </html>
